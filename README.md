@@ -1,17 +1,27 @@
-📚 Playwright Book Store Automation Framework
+# 📚 Playwright Book Store Automation Framework
 
-A Playwright + TypeScript test automation framework built using Page Object Model (POM), fixtures, and Playwright’s authenticated session setup.
+![Playwright](https://img.shields.io/badge/Playwright-Testing-green?logo=playwright)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
+![Node.js](https://img.shields.io/badge/Node.js-Required-brightgreen?logo=node.js)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-🚀 Getting Started
+A **Playwright + TypeScript** automation framework built using **Page Object Model (POM)**, fixtures, and session-based authentication.
 
-1. Install dependencies
-   npm install
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+```bash
+npm install
 
 2. Install Playwright browsers
-   npx playwright install
+npx playwright install
 
 3. Run tests
-   npx playwright test
+
+npx playwright test
 
 ⚙️ Environment Configuration
 Create a .env file in the root directory:
@@ -34,23 +44,23 @@ The framework follows Page Object Model (POM) and clean separation of concerns.
 📁 Folder Structure Overview
 .
 ├── fixtures/
-│ └── auth-fixture.ts
+│   └── auth-fixture.ts
 ├── pages/
-│ ├── bookDetailsPage.ts
-│ ├── bookStorePage.ts
-│ ├── loginPage.ts
-│ └── profilePage.ts
+│   ├── bookDetailsPage.ts
+│   ├── bookStorePage.ts
+│   ├── loginPage.ts
+│   └── profilePage.ts
 ├── tests/
-│ ├── auth.setup.ts
-│ ├── bookstore.spec.ts
-│ ├── login.spec.ts
-│ └── profile.spec.ts
+│   ├── auth.setup.ts
+│   ├── bookstore.spec.ts
+│   ├── login.spec.ts
+│   └── profile.spec.ts
 ├── utils/
-│ ├── apiLogin.ts
-│ ├── bookInterface.ts
-│ └── constants.ts
+│   ├── apiLogin.ts
+│   ├── bookInterface.ts
+│   └── constants.ts
 ├── playwright/.auth/
-│ └── user.json
+│   └── user.json
 ├── playwright.config.ts
 ├── .env
 └── README.md
