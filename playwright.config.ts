@@ -28,7 +28,7 @@ export default defineConfig({
     {
       name: 'Book Store',
       dependencies: ['setup'],
-      testIgnore: ['**/login.spec.ts', '**/auth.setup.ts'],
+      testIgnore: ['**/login.spec.ts', '**/auth.setup.ts', '**/api/**/*.spec.ts'],
       use: {
         ...devices['Desktop Chrome'],
         storageState: path.resolve(__dirname, 'playwright/.auth/user.json')
@@ -37,9 +37,20 @@ export default defineConfig({
     {
       name: 'login',
       testMatch: ['**/login.spec.ts'],
-      testIgnore: ['**/auth.setup.ts'],
+      testIgnore: ['**/auth.setup.ts', '**/api/**/*.spec.ts'],
       use: {
         ...devices['Desktop Chrome']
+      }
+    },
+    {
+      name: 'api',
+      testMatch: ['**/api/*.spec.ts'],
+      use: {
+        baseURL: process.env.API_BASE_URL,
+        extraHTTPHeaders: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
       }
     }
   ]

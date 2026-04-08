@@ -141,3 +141,58 @@ Best Practices Implemented
 ✅ Test isolation
 ✅ Stable locators
 ```
+
+📘 Playwright API Automation Framework
+A scalable Playwright + TypeScript API test framework built to test all endpoints of:
+
+Restful Booker API
+
+📂 Project Structure
+
+pages/
+api/
+auth.api.ts
+booking.api.ts
+ping.api.ts
+
+data/
+auth.data.ts
+booking.data.ts
+
+utils/
+bookInterface.ts // types (request/response models)
+date.ts // date utilities
+
+tests/
+api/
+auth.spec.ts
+booking-create.spec.ts
+booking-delete.spec.ts
+booking-get.spec.ts
+booking-patch.spec.ts
+booking-put.spec.ts
+ping.spec.ts
+
+playwright.config.ts
+
+🧱 Framework Design
+🔹 API Layer (pages/api)
+Encapsulates all HTTP requests.
+
+🔹 Data Layer (pages/data)
+Reusable test data and payload builders.
+
+🔹 Types (pages/utils/bookInterface.ts)
+Contains all request and response models.
+
+🔹 Utilities (pages/utils/date.ts)
+Handles dynamic date generation:
+Ensures checkin and checkout follow YYYY-MM-DD
+Supports future date creation for test stability
+
+🔹 Test Layer (tests/api)
+Contains:
+
+Test scenarios
+Assertions
+API chaining (CRUD flows)
