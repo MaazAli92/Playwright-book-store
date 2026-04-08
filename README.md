@@ -13,6 +13,7 @@ A **Playwright + TypeScript** automation framework built using **Page Object Mod
 ## 🚀 Getting Started
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 
@@ -35,11 +36,11 @@ USERID=bf478f5f-114b-4fff-a1e3-cc86c6cef051
 The framework follows Page Object Model (POM) and clean separation of concerns.
 📊 High-Level Architecture
 
-![alt text](architecture_diagram.png)
+architecture_diagram.png
 
 🔐 Authentication Flow
 
-![alt text](authentication_flow.png)
+authentication_flow.png
 
 📁 Folder Structure Overview
 .
@@ -140,3 +141,4 @@ Best Practices Implemented
 ✅ Clean architecture
 ✅ Test isolation
 ✅ Stable locators
+```
