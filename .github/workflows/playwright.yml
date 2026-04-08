@@ -33,8 +33,8 @@ jobs:
           echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
           echo "USERID=${{ secrets.USERID }}" >> .env
 
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Run Playwright tests (Authenticated)
+        run: npx playwright test --project="Book Store"
 
       - name: Upload HTML report
         if: always()

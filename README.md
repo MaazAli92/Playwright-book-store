@@ -2,7 +2,7 @@
 
 ![Playwright](https://img.shields.io/badge/Playwright-Testing-green?logo=playwright)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
-![CI](https://github.com/maazali/playwright-book-store/actions/workflows/playwright.yml/badge.svg)
+![CI](https://github.com/MaazAli92/playwright-book-store/actions/workflows/playwright.yml/badge.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 A **Playwright + TypeScript** automation framework built using **Page Object Model (POM)**, fixtures, and session-based authentication.
